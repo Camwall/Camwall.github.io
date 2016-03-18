@@ -1,0 +1,20 @@
+以
+public interface Parent{
+ void func();
+}
+public class Child_A implements Parent{
+	public void func(){
+         System.out.println("hello");
+	}
+}
+public class Child_B implements Parent{
+	public void func(){
+	 System.out.println("world");
+	}
+}
+
+Parent pa = new Child_A();
+pa.func();
+Parent pb = new Child_B();
+pb.func();
+为例,pa,pb 会分别按照 Child_A Child_B定义的方法执行.
